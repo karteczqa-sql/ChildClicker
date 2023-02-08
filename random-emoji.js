@@ -1,4 +1,4 @@
-export default emojis = [
+var emojis = [
   "😄",
   "😃",
   "😀",
@@ -819,3 +819,7 @@ export default emojis = [
   "🔸",
   "🔹",
 ];
+
+module.exports = function () {
+  return emojis[Math.floor(Math.random() * emojis.length)];
+};
